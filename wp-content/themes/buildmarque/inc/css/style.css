@@ -1,0 +1,230 @@
+/* Common css */
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.inner {
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+.bg-main {
+  background-color: #2a2948 !important;
+}
+.text-main {
+  color: #2a2948 !important;
+}
+.bg-second {
+  background-color: #fecb10 !important;
+}
+.text-second {
+  color: #fecb10 !important;
+}
+.bg-third {
+  background-color: #3a6495 !important;
+}
+.text-third {
+  color: #3a6495 !important;
+}
+.btn {
+  border: none !important;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+}
+/* responsive common css */
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+
+/* ----------------------------------------------------Home Page------------------------------------------------- */
+
+/* header top css */
+.th table {
+  width: 100%;
+}
+.th a {
+  text-decoration: none;
+  color: #fff;
+}
+.th .rgt {
+  display: inline;
+}
+.th .rgt a {
+  border-radius: 50%;
+  width: 50px;
+}
+/* navbar */
+.hn .head_logo {
+  max-width: 350px;
+}
+.hn .nav-link {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000;
+}
+/* navbar css */
+.hn .navbar-nav a{
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 991px) {
+  .hn .navbar-nav a{
+line-height: 2;
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .hn .navbar-nav{
+    margin-top: 20px;
+  }
+}
+/* carosel section */
+.bnn_inner {
+  background-position: center;
+}
+.bnn_caption h1 {
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 800;
+}
+.bnn_caption h2 {
+  text-transform: uppercase;
+  line-height: 1;
+}
+.bnn_caption .btn {
+  font-size: 20px;
+}
+.blue_line {
+  border-bottom: 2px #2a2948 solid;
+  width: 40%;
+}
+/* Welcome section */
+.wel_inner {
+  background-position: top;
+}
+.wel_section li {
+  font-size: 20px;
+  list-style-image: url("../img/correct.png");
+}
+
+.wel_btn {
+  bottom: 20px;
+  left: 40px;
+}
+.wel_btn .btn {
+  font-size: 20px;
+}
+
+/* why choose us section */
+.why_inner {
+  background-color: #f6f6f6;
+}
+
+/* Form section */
+.form_sec h3 {
+  font-size: 34px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* footer section */
+.footer {
+  padding: 70px 0;
+  border-top: gray 10px solid;
+}
+.footer h4 {
+  font-weight: 400;
+}
+@media only screen and (max-width: 576px) {
+  .wel_btn {
+    position: relative !important;
+    margin-top: 50px;
+  }
+  .form_sec h3 {
+    font-size: 20px;
+  }
+}
+
+/* ----------------------------------------------------Services Page------------------------------------------------- */
+.def_banner_inner{
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ----------------------------------------------------Projects Page------------------------------------------------- */
+/* Style the pr0_tab */
+.pr0_tab {  
+}
+
+/* Style the buttons inside the pr0_tab */
+.pr0_tab button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  border-right: 1px solid rgb(0, 0, 0);
+}
+
+/* Change background color of buttons on hover */
+.pr0_tab button:hover {
+    color: #fecb10;
+}
+
+/* Create an active/current pr0_tablink class */
+.pr0_tab button.active {
+  color: #fecb10;
+}
+
+/* Style the pr0_tab content */
+.pr0_tabcontent {
+  display: none;
+  border-top: none;
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .pr0_tab button {
+    border-right:none;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  
+}
+.proj{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.proj_cap{
+  padding: 130px 100px 0 100px ;
+  min-height: 300px;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+
+/* Single Project Section */
