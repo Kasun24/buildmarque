@@ -228,3 +228,31 @@ line-height: 2;
 }
 
 /* Single Project Section */
+.gal-container img {
+  max-width: 100%;
+  display: block;
+}
+
+.gal-container figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+figure > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+figure a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.gal-container {
+  column-count: 4;
+  column-gap: 10px;
+}
