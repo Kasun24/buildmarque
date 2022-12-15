@@ -11,8 +11,8 @@ Template Name: Home
         style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/header_banner.jpg)"
       >
         <div class="row">
-          <div class="col-sm-0 col-md-2 col-lg-6"></div>
-          <div class="col-sm-12 col-md-10 col-lg-6">
+          <div class="col-sm-0 col-md-2 col-lg-5"></div>
+          <div class="col-sm-12 col-md-10 col-lg-7">
             <div class="bnn_caption p-2">
               <h1 class="text-main">
                 Professional <br />Building <br />Services
