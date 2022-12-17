@@ -38,7 +38,7 @@
           <td>
             <div class="lft">
               <a href="tel:01473738299" class=""><i class="fa fa-mobile text-second" aria-hidden="true"></i>&nbsp;&nbsp; 01473738299</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="mailto:vinstonsbuildmarque@btinternet.com" class="d-block d-sm-inline"><i class="fa fa-envelope-o text-second" aria-hidden="true"></i>&nbsp;&nbsp; vinstonsbuildmarque@btinternet.com</a>
+              <a href="mailto:vinstonsbuildmarque@btinternet.com" class="d-block d-sm-inline"><i class="fa fa-envelope text-second" aria-hidden="true"></i>&nbsp;&nbsp; vinstonsbuildmarque@btinternet.com</a>
             </div>
           </td>
           <td class="text-end">
