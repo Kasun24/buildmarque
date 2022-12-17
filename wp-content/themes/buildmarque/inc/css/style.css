@@ -71,8 +71,9 @@ a {
   vertical-align: sub;
   font-size: 30px;
 } 
-.th .lft .fa-envelope-o{
+.th .lft .fa-envelope{
  vertical-align: initial;
+ font-size: 22px;
 }
 .th .rgt {
   display: inline;
