@@ -24,7 +24,17 @@ get_header();  ?>
           <?php endforeach; ?>
         </div>
       <?php endif; ?>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Popup image</button>
 
+      <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img src="//placehold.it/1000x600" class="img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="back_btn text-center">

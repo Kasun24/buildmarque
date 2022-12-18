@@ -67,13 +67,13 @@ a {
   text-decoration: none;
   color: #fff;
 }
-.th .lft .fa-mobile{
+.th .lft .fa-mobile {
   vertical-align: sub;
   font-size: 30px;
-} 
-.th .lft .fa-envelope{
- vertical-align: initial;
- font-size: 22px;
+}
+.th .lft .fa-envelope {
+  vertical-align: initial;
+  font-size: 22px;
 }
 .th .rgt {
   display: inline;
@@ -92,7 +92,7 @@ a {
   color: #000;
 }
 /* navbar css */
-.hn .navbar-nav a{
+.hn .navbar-nav a {
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
@@ -101,12 +101,12 @@ a {
 }
 
 @media only screen and (max-width: 991px) {
-  .hn .navbar-nav a{
-line-height: 2;
+  .hn .navbar-nav a {
+    line-height: 2;
     font-size: 14px;
     margin-left: 0;
   }
-  .hn .navbar-nav{
+  .hn .navbar-nav {
     margin-top: 20px;
   }
 }
@@ -153,7 +153,7 @@ line-height: 2;
 }
 
 /* Form section */
-.form_sec{
+.form_sec {
   padding: 60px 0;
 }
 .form_sec h3 {
@@ -180,7 +180,7 @@ line-height: 2;
 }
 
 /* ----------------------------------------------------Services Page------------------------------------------------- */
-.def_banner_inner{
+.def_banner_inner {
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -189,7 +189,7 @@ line-height: 2;
 
 /* ----------------------------------------------------Projects Page------------------------------------------------- */
 /* Style the pr0_tab */
-.pr0_tab {  
+.pr0_tab {
 }
 
 /* Style the buttons inside the pr0_tab */
@@ -204,7 +204,7 @@ line-height: 2;
 
 /* Change background color of buttons on hover */
 .pr0_tab button:hover {
-    color: #fecb10;
+  color: #fecb10;
 }
 
 /* Create an active/current pr0_tablink class */
@@ -221,19 +221,18 @@ line-height: 2;
 
 @media only screen and (max-width: 768px) {
   .pr0_tab button {
-    border-right:none;
+    border-right: none;
     width: 100%;
     padding-bottom: 10px;
   }
-  
 }
-.proj{
+.proj {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.proj_cap{
-  padding: 130px 100px 0 100px ;
+.proj_cap {
+  padding: 130px 100px 0 100px;
   min-height: 300px;
   background-color: rgba(0, 0, 0, 0.404);
 }
@@ -256,21 +255,21 @@ figure > img {
   grid-row: 1 / -1;
   grid-column: 1;
 }
-
 figure a {
   color: black;
   text-decoration: none;
 }
-
-
 .gal-container {
   column-count: 4;
   column-gap: 10px;
 }
+@media only screen and (max-width: 1300px) {
+  .gal-container {
+    column-count: 3;
+  }
+}
 @media only screen and (max-width: 768px) {
   .gal-container {
     column-count: 2;
-    column-gap: 10px;
   }
-  
 }
