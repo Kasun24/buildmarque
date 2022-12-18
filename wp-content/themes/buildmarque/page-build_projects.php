@@ -13,6 +13,23 @@ get_header();  ?>
       <h2 class="text-second mb-5">Projects</h2>
     </div>
     <div class="content pt-2 pb-5">
+      <?php
+      $args = array(
+        'taxonomy' => 'dining-category',
+        'orderby' => 'name',
+        'order'   => 'ASC'
+      );
+
+      $cats = get_categories($args);
+
+      foreach ($cats as $cat) {
+      ?>
+        <a href="<?php echo get_category_link($cat->term_id) ?>">
+          <?php echo $cat->name; ?>
+        </a>
+      <?php
+      }
+      ?>
       <div class="pr0_tab text-center">
         <button class="pr0_tablinks bg-white fw-bold text-uppercase px-4" onclick="openCity(event, 'cat_1')">
           All
@@ -278,7 +295,7 @@ get_header();  ?>
 <?php
 $args = array(
   'post_type' => 'build_projects',
-  'category_name' => 'kitchens-bathrooms	'
+  'category_name' => 'kitchens-bathrooms'
 );
 
 $post_query = new WP_Query($args);
@@ -290,7 +307,6 @@ if ($post_query->have_posts()) {
     $cats = get_the_category($post->ID);
 ?>
 
-
     <div class="date-time">
       <p class="date-number"><?php the_date('d'); ?></p>
       <p class="month-name"><?php the_time('M'); ?></p>
@@ -298,23 +314,9 @@ if ($post_query->have_posts()) {
     <div class="exper">
       <p class="experiment text-center"><?php echo $cats[0]->name; ?></p>
     </div>
-
-    </div>
-
+    <img src="<?php echo $featured_img_url; ?>" alt="">
     <h5 class="card-title"><?php the_title(); ?></h5>
 
-    <div class="other-links d-flex flex-md-row flex-wrap justify-content-center">
-      <p class="post-by pr-2">post by</p>
-      <p class="circle"><i class="fa fa-solid fa-circle"></i></p>
-      <?php if (get_field('author_name')) { ?>
-        <p class="chathuranga"><?php the_field('author_name'); ?></p>
-      <?php } else { ?>
-        <p class="chathuranga"><?php the_author(); ?></p>
-      <?php } ?>
-
-      <p class="comment"><a href=""><i class="fa fa-light fa-message"></i></a></p>
-      <p class="share"><a href=""><i class="fa fa-solid fa-share-nodes"></i></a></p>
-    </div>
     <div class="card-description">
       <p class="card-text"><?php the_excerpt(); ?></p>
       <a href="<?php echo get_permalink($post->ID); ?>" class="des">continue reading</a>
