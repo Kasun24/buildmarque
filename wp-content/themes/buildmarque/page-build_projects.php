@@ -54,69 +54,69 @@ get_header();  ?>
             </div>
             <div class="col-sm-4 mt-3">
               <a href="#">
-              <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h3.jpg)">
-                <div class="proj_cap text-center text-light text-uppercase">
-                  house conversion chelmsford
+                <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h3.jpg)">
+                  <div class="proj_cap text-center text-light text-uppercase">
+                    house conversion chelmsford
+                  </div>
                 </div>
-              </div>
               </a>
             </div>
             <div class="col-sm-4 mt-3">
               <a href="#">
-              <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h4.jpg)">
-                <div class="proj_cap text-center text-light text-uppercase">
-                  garden room / gym colchester
+                <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h4.jpg)">
+                  <div class="proj_cap text-center text-light text-uppercase">
+                    garden room / gym colchester
+                  </div>
                 </div>
-              </div>
               </a>
             </div>
             <div class="col-sm-4 mt-3">
               <a href="#">
-              <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h5.jpg)">
-                <div class="proj_cap text-center text-light text-uppercase">
-                  replacement dormers
-                  copdock
+                <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h5.jpg)">
+                  <div class="proj_cap text-center text-light text-uppercase">
+                    replacement dormers
+                    copdock
+                  </div>
                 </div>
-              </div>
               </a>
             </div>
             <div class="col-sm-4 mt-3">
               <a href="#">
-              <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h6.jpg)">
-                <div class="proj_cap text-center text-light text-uppercase">
-                  house Refurbishment ipswich
+                <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h6.jpg)">
+                  <div class="proj_cap text-center text-light text-uppercase">
+                    house Refurbishment ipswich
+                  </div>
                 </div>
-              </div>
               </a>
             </div>
             <div class="col-sm-4 mt-3">
               <a href="#">
-              <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h7.jpg)">
-                <div class="proj_cap text-center text-light text-uppercase">
-                  house extension ipswich
+                <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h7.jpg)">
+                  <div class="proj_cap text-center text-light text-uppercase">
+                    house extension ipswich
+                  </div>
                 </div>
-              </div>
               </a>
             </div>
             <div class="col-sm-4 mt-3">
-              
+
             </div>
             <div class="col-sm-4 mt-3">
               <a href="#">
-              <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h9.jpg)">
-                <div class="proj_cap text-center text-light text-uppercase">
-                  house refurbishment lexden
+                <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h9.jpg)">
+                  <div class="proj_cap text-center text-light text-uppercase">
+                    house refurbishment lexden
+                  </div>
                 </div>
-              </div>
               </a>
             </div>
             <div class="col-sm-4 mt-3">
               <a href="#">
-              <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h10.jpg)">
-                <div class="proj_cap text-center text-light text-uppercase">
-                  new orangery lexden
+                <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h10.jpg)">
+                  <div class="proj_cap text-center text-light text-uppercase">
+                    new orangery lexden
+                  </div>
                 </div>
-              </div>
               </a>
             </div>
             <div class="col-sm-4 mt-3">
@@ -277,28 +277,52 @@ get_header();  ?>
 <!-- test -->
 <?php
 $args = array(
-    'post_type' => 'build_projects',
-    'order' => 'ASC',
-    'category_name' => 'new-build-bergholt'
+  'post_type' => 'post'
 );
-$the_query = new WP_Query( $args ); ?>
 
-<?php if ( $the_query->have_posts() ) : ?>
-    <div class="superhero-container">
-        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <div class="superhero">						
-                <?php if ( get_the_post_thumbnail() ) : /* Show the featured image if there is one */ ?>									 
-                    <?php the_post_thumbnail(); ?>
-                <?php endif; ?>
-                <h2><?php the_title(); ?></h2>
-                <?php the_content(); ?>
-            </div>
-        <?php endwhile; ?>
+$post_query = new WP_Query($args);
+
+if ($post_query->have_posts()) {
+  while ($post_query->have_posts()) {
+    $post_query->the_post();
+    $featured_img_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thumbnail');
+    $cats = get_the_category($post->ID);
+?>
+
+
+    <div class="date-time">
+      <p class="date-number"><?php the_date('d'); ?></p>
+      <p class="month-name"><?php the_time('M'); ?></p>
+    </div>
+    <div class="exper">
+      <p class="experiment text-center"><?php echo $cats[0]->name; ?></p>
     </div>
 
-    <?php wp_reset_postdata(); ?>
+    </div>
 
-<?php endif; ?>
+    <h5 class="card-title"><?php the_title(); ?></h5>
+
+    <div class="other-links d-flex flex-md-row flex-wrap justify-content-center">
+      <p class="post-by pr-2">post by</p>
+      <p class="circle"><i class="fa fa-solid fa-circle"></i></p>
+      <?php if (get_field('author_name')) { ?>
+        <p class="chathuranga"><?php the_field('author_name'); ?></p>
+      <?php } else { ?>
+        <p class="chathuranga"><?php the_author(); ?></p>
+      <?php } ?>
+
+      <p class="comment"><a href=""><i class="fa fa-light fa-message"></i></a></p>
+      <p class="share"><a href=""><i class="fa fa-solid fa-share-nodes"></i></a></p>
+    </div>
+    <div class="card-description">
+      <p class="card-text"><?php the_excerpt(); ?></p>
+      <a href="<?php echo get_permalink($post->ID); ?>" class="des">continue reading</a>
+    </div>
+
+<?php
+  }
+}
+?>
 <!-- test -->
 
 <?php get_footer(); ?>
