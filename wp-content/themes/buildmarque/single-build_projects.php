@@ -37,9 +37,9 @@ get_header();  ?>
             <div class="modal fade" id="exampleModal<?php echo esc_html($image['id']); ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header">
+                  <!-- <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
+                  </div> -->
                   <div class="modal-body">
                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                   </div>
