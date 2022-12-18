@@ -36,7 +36,7 @@ get_header();  ?>
         <div class="sing_cat_sec">
           <div class="row">
             <!-- TEST -->
-            <!-- <?php
+            <?php
             $args = array(
               'post_type' => 'build_projects',
               'category_name' => 'internal-refurbs'
@@ -63,7 +63,7 @@ get_header();  ?>
             <?php
               }
             }
-            ?> -->
+            ?>
             <!-- TEST -->
             <div class="col-sm-4 mt-3">
               <a href="<?php echo get_home_url(); ?>/build_projects/new-build-bergholt/">
