@@ -149,7 +149,7 @@ Template Name: Home
       <div class="ow_inner text-center inner bg-third">
         <div class="container">
           <h2 class="text-light mb-4">our work</h2>
-          <h5 class="text-light">
+          <h5 class="text-light w-75 mx-auto">
             Below is a small selection of images from ourcurrent project
             gallery. Click on the images to view the full project or
             <a href="" class="text-second">click here</a> to see the full
