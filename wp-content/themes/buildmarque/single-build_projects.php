@@ -24,21 +24,40 @@ get_header();  ?>
           <?php endforeach; ?>
         </div>
       <?php endif; ?>
-      <!-- test -->
+
       <?php
       $images = get_field('project_gallery');
       if ($images) : ?>
         <div class="gal-container">
-            <?php foreach ($images as $image) : ?>
-              <figure>
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                <p><?php echo esc_html($image['id']); ?></p>
-              </figure>
-            <?php endforeach; ?>
+          <?php foreach ($images as $image) : ?>
+            <figure>
+              <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" data-bs-toggle="modal" data-bs-target="#<?php echo esc_html($image['id']); ?>" />
+            </figure>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
         </div>
       <?php endif; ?>
+      <!-- test -->
+      <!-- Button trigger modal -->
 
-      
+
       <!-- test -->
     </div>
 
