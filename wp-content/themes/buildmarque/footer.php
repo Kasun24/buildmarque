@@ -11,7 +11,7 @@
 
 ?>
   <!-- footer form section -->
-  <div class="form_sec bg-second py-5">
+  <div class="form_sec bg-second">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-7">

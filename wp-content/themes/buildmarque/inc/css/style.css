@@ -153,6 +153,9 @@ line-height: 2;
 }
 
 /* Form section */
+.form_sec{
+  padding: 60px 0;
+}
 .form_sec h3 {
   font-size: 34px;
   font-weight: bold;
