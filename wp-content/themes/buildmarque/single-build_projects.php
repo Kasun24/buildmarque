@@ -31,9 +31,7 @@ get_header();  ?>
         <div class="gal-container">
           <?php foreach ($images as $image) : ?>
             <figure>
-              <a href="" data-bs-toggle="modal" data-bs-target="#<?php echo esc_html($image['id']); ?>">
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-              </a>
+                <img type="button" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" data-bs-toggle="modal" data-bs-target="#<?php echo esc_html($image['id']); ?>"/>              
             </figure>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
