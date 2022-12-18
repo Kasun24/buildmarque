@@ -34,6 +34,8 @@ get_header();  ?>
   </div>
 </div>
 
-
+<a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox">
+	<img src="https://unsplash.it/600.jpg?image=251">
+</a>
 
 <?php get_footer(); ?>
