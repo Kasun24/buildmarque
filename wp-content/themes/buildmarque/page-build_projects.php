@@ -15,7 +15,7 @@ get_header();  ?>
     <div class="content pt-2 pb-5">
       <?php
       $args = array(
-        'taxonomy' => 'dining-category',
+        'post_type' => 'build_projects',
         'orderby' => 'name',
         'order'   => 'ASC'
       );
