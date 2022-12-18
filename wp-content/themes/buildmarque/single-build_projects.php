@@ -26,7 +26,7 @@ get_header();  ?>
       <?php endif; ?>
       <!-- test -->
       <?php
-      $images = get_field('gallery');
+      $images = get_field('project_gallery');
       if ($images) : ?>
         <div id="slider" class="flexslider">
           <ul class="slides">
