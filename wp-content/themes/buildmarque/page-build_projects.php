@@ -277,7 +277,8 @@ get_header();  ?>
 <!-- test -->
 <?php
 $args = array(
-  'post_type' => 'build_projects'
+  'post_type' => 'build_projects',
+  'category_name' => 'internal-refurbs'
 );
 
 $post_query = new WP_Query($args);
