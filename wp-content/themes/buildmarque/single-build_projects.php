@@ -28,50 +28,17 @@ get_header();  ?>
       <?php
       $images = get_field('project_gallery');
       if ($images) : ?>
-        <div id="slider" class="flexslider">
-          <ul class="slides">
+        <div class="gal-container">
             <?php foreach ($images as $image) : ?>
-              <li>
+              <figure>
                 <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                <p><?php echo esc_html($image['caption']); ?></p>
-              </li>
+                <p><?php echo esc_html($image['id']); ?></p>
+              </figure>
             <?php endforeach; ?>
-          </ul>
-        </div>
-        <div id="carousel" class="flexslider">
-          <ul class="slides">
-            <?php foreach ($images as $image) : ?>
-              <li>
-                <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="Thumbnail of <?php echo esc_url($image['alt']); ?>" />
-              </li>
-            <?php endforeach; ?>
-          </ul>
         </div>
       <?php endif; ?>
 
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-      </button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <!-- test -->
     </div>
 
