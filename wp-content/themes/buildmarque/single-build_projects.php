@@ -31,14 +31,14 @@ get_header();  ?>
         <div class="gal-container">
           <?php foreach ($images as $image) : ?>
             <figure>
-                <img type="button" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" data-bs-toggle="modal" data-bs-target="#1"/>              
+                <img type="button" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" data-bs-toggle="modal" data-bs-target="#<?php echo esc_html($image['id']); ?>Modal"/>              
             </figure>
             <!-- Modal -->
-            <div class="modal fade" id="1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="<?php echo esc_html($image['id']); ?>Modal" tabindex="-1" aria-labelledby="<?php echo esc_html($image['id']); ?>ModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="<?php echo esc_html($image['id']); ?>ModalLabel">Modal title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
