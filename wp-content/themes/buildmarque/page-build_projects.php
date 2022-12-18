@@ -35,7 +35,8 @@ get_header();  ?>
       <div id="cat_1" class="pr0_tabcontent" style="display: block">
         <div class="sing_cat_sec">
           <div class="row">
-            <?php
+            <!-- TEST -->
+            <!-- <?php
             $args = array(
               'post_type' => 'build_projects',
               'category_name' => 'internal-refurbs'
@@ -52,7 +53,7 @@ get_header();  ?>
                 <div class="col-sm-4 mt-3">
                   <a href="<?php echo get_permalink($post->ID); ?>">
                     <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h1.jpg)">
-                    <!-- <img src="<?php echo $featured_img_url; ?>" alt=""> -->
+                      <img src="<?php echo $featured_img_url; ?>" alt="">
                       <div class="proj_cap text-center text-light text-uppercase">
                         <?php the_title(); ?>
                       </div>
@@ -62,7 +63,17 @@ get_header();  ?>
             <?php
               }
             }
-            ?>
+            ?> -->
+            <!-- TEST -->
+            <div class="col-sm-4 mt-3">
+              <a href="<?php echo get_home_url(); ?>/build_projects/new-build-bergholt/">
+                <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h1.jpg)">
+                  <div class="proj_cap text-center text-light text-uppercase">
+                    new build bergholt
+                  </div>
+                </div>
+              </a>
+            </div>
             <div class="col-sm-4 mt-3">
               <a href="#">
                 <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h2.jpg)">
@@ -295,7 +306,7 @@ get_header();  ?>
 </div>
 
 <!-- test -->
-<!-- <?php
+<?php
 $args = array(
   'post_type' => 'build_projects',
   'category_name' => 'kitchens-bathrooms'
@@ -328,7 +339,7 @@ if ($post_query->have_posts()) {
 <?php
   }
 }
-?> -->
+?>
 <!-- test -->
 
 <?php get_footer(); ?>
