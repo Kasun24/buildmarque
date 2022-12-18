@@ -25,6 +25,30 @@ get_header();  ?>
         </div>
       <?php endif; ?>
       <!-- test -->
+      <?php
+      $images = get_field('gallery');
+      if ($images) : ?>
+        <div id="slider" class="flexslider">
+          <ul class="slides">
+            <?php foreach ($images as $image) : ?>
+              <li>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <p><?php echo esc_html($image['caption']); ?></p>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+        <div id="carousel" class="flexslider">
+          <ul class="slides">
+            <?php foreach ($images as $image) : ?>
+              <li>
+                <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="Thumbnail of <?php echo esc_url($image['alt']); ?>" />
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+      <?php endif; ?>
+
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
