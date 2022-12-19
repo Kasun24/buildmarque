@@ -153,18 +153,18 @@ get_header();  ?>
         <div class="col-md-6 col-sm-12">
           <div class="row">
             <div class="col-sm-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="mt-3 mt-sm-0 mb-sm-1 mb-md-1 mb-lg-2 img-fluid" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid" alt="" />
             </div>
             <div class="col-sm-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="mt-3 mt-sm-0 mb-sm-1 mb-md-1 mb-lg-2 img-fluid" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="mt-3 mt-sm-0 mb-sm-1 mb-md-1 mb-lg-2 img-fluid" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid" alt="" />
             </div>
             <div class="col-sm-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="mt-3 mt-sm-0 mb-sm-1 mb-md-1 mb-lg-2 img-fluid" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid" alt="" />
             </div>
           </div>
         </div>
@@ -178,10 +178,10 @@ get_header();  ?>
             <table class="w-100">
               <tr>
                 <td>
-                  <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="mt-3 mt-sm-0 mb-sm-1 mb-md-1 mb-lg-2 img-fluid" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid" alt="" />
                 </td>
                 <td>
-                  <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="mt-3 mt-sm-0 mb-sm-1 mb-md-1 mb-lg-2 img-fluid" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid" alt="" />
                 </td>
               </tr>
               <tr>
