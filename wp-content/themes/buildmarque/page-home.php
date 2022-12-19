@@ -152,10 +152,10 @@ get_header();  ?>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="row ">
-            <div class="col-sm-6 pt-3 pt-sm-0">
+            <div class="col-sm-6 pt-3 pt-md-0">
               <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid w-100" alt="" />
             </div>
-            <div class="col-sm-6 pt-3 pt-sm-0">
+            <div class="col-sm-6 pt-3 pt-md-0">
               <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid w-100" alt="" />
             </div>
           </div>
