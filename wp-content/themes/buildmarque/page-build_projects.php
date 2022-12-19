@@ -52,9 +52,7 @@ get_header();  ?>
             ?>
                 <div class="col-sm-4 mt-3">
                   <a href="<?php echo get_permalink($post->ID); ?>">
-                    <div class="proj" style="background-image: url(<?php echo get_template_directory_uri(); ?>/inc/img/h1.jpg)">
-                      <img src="<?php echo $featured_img_url; ?>" alt="">
-                      <img src="<?php the_field('post_image'); ?>" alt="">
+                    <div class="proj" style="background-image: url(<?php echo $featured_img_url; ?>)">
                       <div class="proj_cap text-center text-light text-uppercase">
                         <?php the_title(); ?>
                       </div>
