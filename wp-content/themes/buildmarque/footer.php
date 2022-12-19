@@ -58,7 +58,7 @@
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="footer_logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/inc/img/fot_logo.png" class="img-fluid" alt="" />
+          <img src="<?php the_field('footer_logo', 'option'); ?>" class="img-fluid" alt="" />
         </div>
       </div>
       <div class="col-sm-6 col-md-4 mt-3 mt-sm-0">
