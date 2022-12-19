@@ -39,7 +39,7 @@ get_header();  ?>
             <?php
             $args = array(
               'post_type' => 'build_projects',
-              'category_name' => 'all'
+              
             );
 
             $post_query = new WP_Query($args);
