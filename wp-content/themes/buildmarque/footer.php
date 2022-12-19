@@ -64,12 +64,7 @@
       <div class="col-sm-6 col-md-4 mt-3 mt-sm-0">
         <h5 class="text-second">VINTONS BUILDMARQUE LTD</h5>
         <h5 class="text-light">
-          THE LAST HOUSE <br />
-          48 STONEY ROAD <br />
-          GRUNDISBURGH <br />
-          WOODBRIDGE <br />
-          SUFFOLK <br />
-          IP13 6RG
+        <?php the_field('addrerss', 'option'); ?>
         </h5>
         <h5 class="text-capitalize text-light mt-4">
           Company No. 09859638
@@ -79,14 +74,14 @@
         <h5 class="text-second">Contact us</h5>
         <h5 class="text-capitalize text-light mt-4">
           Ray Vinton – mobile
-          <a class="text-light" href="tel:07813731723">07813 731723</a><br />
-          <a href="mailto:ray.vinton@btinternet.com" class="text-third">ray.vinton@btinternet.com</a>
+          <a class="text-light" href="tel:<?php the_field('personal_contact_number', 'option'); ?>"><?php the_field('personal_contact_number', 'option'); ?></a><br />
+          <a href="mailto:<?php the_field('personal_email', 'option'); ?>" class="text-third"><?php the_field('personal_email', 'option'); ?></a>
         </h5>
         <h5 class="text-capitalize text-light mt-4">
           Office –
-          <a href="tel:01473738299" class="text-light">01473 738299</a>
+          <a href="tel:<?php the_field('office_contact_number', 'option'); ?>" class="text-light"><?php the_field('office_contact_number', 'option'); ?></a>
           <br />
-          <a href="mailto:vintonsbuildmarque@btinternet.com" class="text-third">vintonsbuildmarque@btinternet.com</a>
+          <a href="mailto:<?php the_field('office_email', 'option'); ?>" class="text-third"><?php the_field('office_email', 'option'); ?></a>
         </h5>
         <div class="fot_social mt-4">
           <a href="instragram" class="text-dark bg-third py-1 px-2 rounded-circle"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;
