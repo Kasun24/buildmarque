@@ -39,7 +39,7 @@ get_header();  ?>
             <?php
             $args = array(
               'post_type' => 'build_projects',
-              
+              'posts_per_page' => 100
             );
 
             $post_query = new WP_Query($args);
