@@ -204,42 +204,5 @@ get_header();  ?>
   </div>
 </div>
 
-<!-- test -->
-
-<?php
-$args = array(
-  'post_type' => 'build_projects',
-  'category_name' => 'kitchens-bathrooms'
-);
-
-$post_query = new WP_Query($args);
-
-if ($post_query->have_posts()) {
-  while ($post_query->have_posts()) {
-    $post_query->the_post();
-    $featured_img_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thumbnail');
-    $cats = get_the_category($post->ID);
-?>
-
-    <div class="date-time">
-      <p class="date-number"><?php the_date('d'); ?></p>
-      <p class="month-name"><?php the_time('M'); ?></p>
-    </div>
-    <div class="exper">
-      <p class="experiment text-center"><?php echo $cats[0]->name; ?></p>
-    </div>
-    <img src="<?php echo $featured_img_url; ?>" alt="">
-    <h5 class="card-title"><?php the_title(); ?></h5>
-
-    <div class="card-description">
-      <p class="card-text"><?php the_excerpt(); ?></p>
-      <a href="<?php echo get_permalink($post->ID); ?>" class="des">continue reading</a>
-    </div>
-
-<?php
-  }
-}
-?>
-<!-- test -->
 
 <?php get_footer(); ?>
