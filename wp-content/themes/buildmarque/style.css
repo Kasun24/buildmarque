@@ -218,7 +218,7 @@ html {
 	padding: 60px 0;
   }
   .form_sec h3 {
-	font-size: 34px;
+	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
   }
@@ -343,3 +343,8 @@ html {
 	  padding: 0 20px;
 	}
   }
+
+  /* Hide resize  option textarea */
+textarea#exampleFormControlTextarea1 {
+    resize: none;
+}
