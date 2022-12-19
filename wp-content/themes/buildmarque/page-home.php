@@ -146,7 +146,7 @@ get_header();  ?>
         <a href="" class="text-second">click here</a> to see the full
         project gallery.
       </h5>
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-md-6 col-sm-12">
           <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house1.jpg" class="img-fluid" alt="" />
         </div>
@@ -169,7 +169,7 @@ get_header();  ?>
           </div>
         </div>
       </div>
-      <table class="mt-5 w-100">
+      <!-- <table class="mt-5 w-100">
         <tr>
           <td class="d-block d-sm-inline">
             <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house1.jpg" class="img-fluid" alt="" />
@@ -195,7 +195,7 @@ get_header();  ?>
             </table>
           </td>
         </tr>
-      </table>
+      </table> -->
       <a href="" class="btn bg-second py-4 px-5 mt-5">view all projects</a>
     </div>
   </div>
