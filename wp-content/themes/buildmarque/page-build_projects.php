@@ -39,6 +39,8 @@ get_header();  ?>
             <?php
             $args = array(
               'post_type' => 'build_projects',
+              'orderby'          => 'meta_value_datetime',
+              'order'            => 'ASC',
               'posts_per_page' => 100
             );
 
