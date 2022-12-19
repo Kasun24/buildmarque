@@ -148,23 +148,23 @@ get_header();  ?>
       </h5>
       <div class="row mt-5">
         <div class="col-md-6 col-sm-12">
-          <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house1.jpg" class="img-fluid" alt="" />
+          <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house1.jpg" class="img-fluid w-100" alt="" />
         </div>
         <div class="col-md-6 col-sm-12">
-          <div class="row">
-            <div class="col-sm-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid" alt="" />
+          <div class="row ">
+            <div class="col-sm-6 pt-3 pt-sm-0">
+              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid w-100" alt="" />
             </div>
-            <div class="col-sm-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid" alt="" />
+            <div class="col-sm-6 pt-3 pt-sm-0">
+              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid w-100" alt="" />
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid" alt="" />
+            <div class="col-sm-6 pt-3">
+              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid w-100" alt="" />
             </div>
-            <div class="col-sm-6">
-              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid" alt="" />
+            <div class="col-sm-6 pt-3">
+              <img src="<?php echo get_template_directory_uri(); ?>/inc/img/house2.jpg" class="img-fluid w-100" alt="" />
             </div>
           </div>
         </div>
