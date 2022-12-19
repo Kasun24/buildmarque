@@ -41,7 +41,7 @@
               <a href="mailto:<?php the_field('office_email', 'option'); ?>" class="d-block d-sm-inline"><i class="fa fa-envelope text-second" aria-hidden="true"></i>&nbsp;&nbsp; <?php the_field('office_email', 'option'); ?></a>
             </div>
           </td>
-          <td class="text-end">
+          <td class="text-end d-none d-sm-block">
             <div class="rgt">
               <a href="instragram" class="text-dark bg-third py-1 px-2"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;
               <a href="facebook" class="text-dark bg-third py-1 px-2"><i class="fa fa-facebook mt-3 mt-sm-0" aria-hidden="true"></i></a>
