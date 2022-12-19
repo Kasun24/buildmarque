@@ -37,7 +37,7 @@
         <tr>
           <td>
             <div class="lft">
-              <a href="tel:<?php the_field('office_contact_number', 'option'); ?>" class=""><i class="fa fa-mobile text-second" aria-hidden="true"></i>&nbsp;&nbsp; <?php the_field('office_contact_number', 'option'); ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="tel:<?php the_field('personal_contact_number', 'option'); ?>" class=""><i class="fa fa-mobile text-second" aria-hidden="true"></i>&nbsp;&nbsp; <?php the_field('office_contact_number', 'option'); ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="mailto:<?php the_field('office_email', 'option'); ?>" class="d-block d-sm-inline"><i class="fa fa-envelope text-second" aria-hidden="true"></i>&nbsp;&nbsp; <?php the_field('office_email', 'option'); ?></a>
             </div>
           </td>
